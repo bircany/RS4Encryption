@@ -98,10 +98,6 @@ while(true){
 }
 ```
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8203a35e-3644-4bd9-9b77-c8fc9496e3b8/5eda1913-0742-4c87-978b-5966fe6efe8c/image.png)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8203a35e-3644-4bd9-9b77-c8fc9496e3b8/0393f943-b033-4431-aa07-3dd3fd0dc08c/image.png)
-
 ```java
 package rc4;
 

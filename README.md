@@ -25,29 +25,19 @@ RC4 ‘ ün dezavantajları ;
 
 Bir anahtar girişi, giriş anahtarı bilgisi olmadan tahmin edilemeyen 8 bitlik bir akış numarası üreten sözde rasgele bit oluşturucudur. Oluşturucunun çıkışına anahtar akışı denir ve Xor kullanılarak düz metin akış şifresiyle her seferinde bir bayt birleştirilir. 
 
-## **formül:**
-
 A:Bilgi 
-
-B:Anahtar 
-
+B:Anahtar
 C:xor sonucu çıkan veri 
-
 A xor B = C
-
 C xor B = A
 
 # **Örnek:**
-
 örneğin isminizi öğrenmek isteyen bir kullanıcıya kendi isminizi şifreleyerek göndermeye çalışıyorsunuz.
-
 bircan isminin ikilik karşılığı 11010011 olsun. Bende ve kullanıcıda şifreyi çözen iki anahtar var. Xor kullanarak bilgiyi şifreleyip karşı tarafa göndereceğiz.
+bircan: 11010011
+key: 00111000 olsun
 
-bircan:11010011
-
-key:00111000 olsun
-
-**Not💡: Bende ve kullanıcıda kesinlikle aynı anahtar bulunmalıdır.**
+Not💡: Bende ve kullanıcıda kesinlikle aynı anahtar bulunmalıdır.
 
       11010011
 
@@ -68,11 +58,8 @@ benim tarafımdan 1100011xor00111000=11101011 sonucu çıkıyor peki bu ne anlam
      11010011
 
 kullanıcı tarafı 11101011xor00111000=11010011 sonucunu elde ediyor ve bu da tekrar bircan ismini elde ediyor. Yani basit bir xor kapısıyla bilgiyi gizleyip ve gönderip tekrar karşı tarafta aynı anahtar kullanarak elde ediyoruz.
-
 gönderen: bircan : 11010011
-
 alıcı: kullanıcı: 11010011: bircan
-
 en basit ve güvenli bilgi gönderme yöntemidir.
 
 **Anahtar Oluşturma Algoritması –**
@@ -101,7 +88,7 @@ S vektörü başlatıldığında, giriş tuşu kullanılmayacaktır. Bu adımda,
 
 ```java
 i,j = 0;
-whilte(true){
+while(true){
 	i = (i+1) % 256;
 	j = (j+S[i]) % 256;
 	Swap(S[i] , S[j]);
@@ -228,4 +215,7 @@ Bu metot, hem şifreleme hem de şifre çözme için kullanılır:
 - RC4 algoritması ile şifreleme ve şifre çözme gerçekleştirilir.
 - Sonuçlar ekrana yazdırılır.
 
+Resources
 [https://www.youtube.com/watch?v=VUwiDh0m_kg&ab_channel=Donanımsal](https://www.youtube.com/watch?v=VUwiDh0m_kg&ab_channel=Donan%C4%B1msal)
+https://www.geeksforgeeks.org/rc4-encryption-algorithm/
+https://devrimozcay.medium.com/rc4-encryption-algorithm-rc4-%C5%9Fifreleme-algoritmas%C4%B1-b08786efebed

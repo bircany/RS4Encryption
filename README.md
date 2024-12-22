@@ -181,8 +181,6 @@ class RC4 {
 
 ```
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/8203a35e-3644-4bd9-9b77-c8fc9496e3b8/e23ef8b2-51be-4685-8a05-fa8108c8bf1d/image.png)
-
 `display()` metoduyla bir tamsayı dizisini alıp her bir elemanını karakter olarak ekrana yazdırır. Bu, şifrelenmiş veya çözülen metni görüntülemek için kullanırız.
 
 `stringToAsciiArray()` metodu Bir dizeyi (metin veya anahtar) karakterlerin ASCII değerlerinden oluşan bir tamsayı dizisine dönüştürür. Bu, RC4 algoritmasında kullanılacak girişlerin işlenmesini sağlar.
